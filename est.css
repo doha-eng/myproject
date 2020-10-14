@@ -200,11 +200,12 @@ align-content: space-between;
 
 /*page3*/
 .body3{
-    background-image: url(doha1.jpg);
+    background-color: lightblue;
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
+    
 }
 .par {
     text-align: center;
