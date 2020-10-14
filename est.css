@@ -1,0 +1,319 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+} 
+.body1
+{
+    background-image:url(fond.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+  height: 100px;
+  background: rgb(100,150,900);
+  padding: 0 20px;
+  color: #fff;
+ 
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+    
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show,.hide{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show
+  float: right;
+}
+.show i{
+  line-height: 100px;
+  
+}
+.menu a:hover,
+.show:hover,
+.hide:hover{
+  color:mediumblue;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 20px;
+}
+.content img{
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show,.hide{
+    display: block;
+    }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;}
+  .menu a{
+    display: block;
+    padding: 20px;}
+  .hide{
+    position: absolute;
+    top: 40px;
+    right: 40px;}
+  #chk:checked ~ .menu{
+    right: 0;}   
+}
+@media (max-width:1000px){
+ .box-principale,.box2-principale,.per_3_table,.deu_3_table,
+    .trois_3_table{
+ justify-content: center;
+    flex-wrap: wrap;
+    }
+.box1,.box2,.box3{
+    flex-grow:1;
+    margin: 8px;}          
+}
+.cite{
+    font-family:"Comic Sans MS";
+    color: cornflowerblue;
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    
+}
+.home{
+    font-family:"Comic Sans MS";
+    font-size: 19px;  
+    width: 600px;
+    position: relative;
+    top:200px;
+    float: right;
+ align-content: space-between;     
+}
+abbr{  text-decoration:none;}
+p{padding:0px ;
+word-spacing: 2px;  
+    font-family: "Comic Sans MS";
+}
+/*page2*/
+.body2
+{
+    background-image:url(doha1.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-family: "calibri";
+align-content: space-between;
+}
+.box1,.box2,.box3{
+    width: 390px;
+    height:360px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 2px 2px 2px rgb(0,2,0,3);
+    background-color:rgb(100,150,900);
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+
+
+.box1 span,
+.box2 span,
+.box3 span
+{   font-weight: bold;
+    font-family: "calibri";
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    color: rgb(100,150,900);
+    justify-content:center; 
+}
+.box4 span,
+.box5 span
+{   font-weight: bold;
+    font-family: calibri;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    color: burlywood;
+    justify-content:center; 
+}
+
+.box-principale{
+    display: flex;
+    justify-content:space-around;
+    position: relative;
+    top:190px;
+     display: flex;
+    }  
+
+/*page3*/
+.body3{
+    background-color: lightblue;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+.par {
+    text-align: center;
+    padding: 10px;
+    
+}
+.table1,.table2,.table3,
+.table4,.table5,.table6
+{
+     width: 400px;
+    height:190px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 2px 2px 2px rgb(0,2,0,3);
+    background-color:rgb(100,150,900);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    
+   
+}
+.table7,.table8,.table9{
+     width: 400px;
+    height:520px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 2px 2px 2px rgb(0,2,0,3);
+    background-color:rgb(100,150,900);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    
+   
+}
+.per_3_table{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top:100px;
+     display: flex;   
+    
+}
+.deu_3_table{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top:100px;
+     display: flex;   
+}
+.trois_3_table{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top:100px;
+     display: flex;   
+}
+
+
+table {
+    
+  height:170px; 
+    width: 400px;
+border-color: black;
+   empty-cells: show;
+   
+    
+}
+th,td{
+    border: 1px solid black;
+    padding: 3px;
+    
+}
+/*page4*/
+.body4
+{
+    background-image:url(doha2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.box4,.box5{
+    width: 700px;
+    height:642px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-shadow: 2px 2px 2px rgb(0,2,0,3);
+    background-color:burlywood;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  margin: 10px;
+  
+}
+.box2-principale{
+    display: flex;
+    justify-content:space-between;
+    position: relative;
+    top:280px;
+     display: flex;
+    }  
+h3{
+    font-family: "calibri";
+    color: rgb(100,150,900);
+    
+    
+    
+}
